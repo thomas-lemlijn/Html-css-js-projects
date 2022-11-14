@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode Switch</title>
+</head>
+<body>
+    <h1>Bienvenue sur le site web !</h1>
+    <h2>Le concept est simplement, avoir une page html clasique mais avec un bouton pour passer en mode sombre</h2>
+
+    <button onclick="toggleDarkMode()" class="button">Mode sombre</button>
+
+    <script>
+        const button = document.querySelector('.button');
+        const body = document.querySelector('body');
+
+        function toggleDarkMode() {
+            if(body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                button.innerHTML = "Mode sombre";
+            } else {
+                body.classList.add('dark-mode');
+                button.innerHTML = "Mode clair";
+            }
+        }
+    </script>
+</body>
+</html>

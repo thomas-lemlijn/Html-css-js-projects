@@ -1,0 +1,38 @@
+body {
+    --color-text-light: #1e293b;
+    --color-text-dark: #e2e8f0;
+    --color-bg-light: #e2e8f0;
+    --color-bg-dark: #1e293b;
+
+    text-align: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+
+    transition: 0.4s;
+}
+
+body button {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+
+    cursor: pointer;
+}
+
+body.dark-mode button {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+}
+
+.dark-mode {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+
+    transition: 0.4s;
+}
