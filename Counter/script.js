@@ -1,13 +1,14 @@
-var counter = document.querySelector('#counter-input');
-var valeur = 1;
+const minus = document.querySelector('.container-minus');
+const value = document.querySelector('.container-value');
+const plus = document.querySelector('.container-plus');
 
-function add() {
-    valeur++;
-    counter.innerHTML(valeur);
+let number = 1;
 
+minus.onclick = function() {
+    number--;
+    value.innerHTML = number;
 }
-
-function remove() {
-    valeur--;
-    counter.innerHTML(valeur);
+plus.onclick = function() {
+    number++;
+    value.innerHTML = number;
 }
