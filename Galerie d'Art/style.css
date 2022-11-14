@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #e4e4e7;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #404040;
+    user-select: none;
+}
+
+.container {
+    --width-grid: 460px;
+
+    padding: 20px;
+
+    background-color: #404040;
+    border-radius: 10px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 20px;
+}
+
+.cases {
+    background-color: chocolate;
+    box-shadow: rgba(218, 218, 218, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.cases:nth-child(1) {
+    background-color: #dc2626;
+}
+.cases:nth-child(2) {
+    background-color: #ea580c;
+}
+.cases:nth-child(3) {
+    background-color: #d97706;
+}
+.cases:nth-child(4) {
+    background-color: #ca8a04;
+}
+
+.cases:nth-child(5) {
+    background-color: #65a30d;
+}
+.cases:nth-child(6) {
+    background-color: #16a34a;
+}
+.cases:nth-child(7) {
+    background-color: #059669;
+}
+.cases:nth-child(8) {
+    background-color: #0d9488;
+}
+
+.cases:nth-child(9) {
+    background-color: #0891b2;
+}
+.cases:nth-child(10) {
+    background-color: #0284c7;
+}
+.cases:nth-child(11) {
+    background-color: #2563eb;
+}
+.cases:nth-child(12) {
+    background-color: #4f46e5;
+}
+
+.cases:nth-child(13) {
+    background-color: #7c3aed;
+}
+.cases:nth-child(14) {
+    background-color: #9333ea;
+}
+.cases:nth-child(15) {
+    background-color: #c026d3;
+}
+.cases:nth-child(16) {
+    background-color: #db2777;
+}
