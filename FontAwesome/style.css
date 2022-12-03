@@ -1,0 +1,63 @@
+body {
+    margin: 25px;
+    margin-top: 50px;
+    padding: 0;
+
+    background-color: #F0F1F3;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-cards {
+    max-width: 1300px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.card {
+    width: 340px;    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border-radius: 25px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #183153;
+}
+
+.card-up {
+    height: 156px;
+
+    display: flex;
+    align-items: center;
+}
+.card-down {
+    height: 130px;
+    border-radius: 0 0 25px 25px;
+    padding: 15px;
+}
+.card-down .card-title {
+    font-size: 20px;
+}
+.card-down .card-text {
+    position: relative;
+    top: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card:nth-child(1) .card-down { background-color: #FFD43B; }
+.card:nth-child(2) .card-down { background-color: #74C0FC; }
+.card:nth-child(3) .card-down { background-color: #63E6BE; }
+.card:nth-child(4) .card-down { background-color: #E599F7; }
+.card:nth-child(5) .card-down { background-color: #b197fc; }
+.card:nth-child(6) .card-down { background-color: #ff8787; }

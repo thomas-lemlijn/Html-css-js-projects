@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* background-color: #ffedd5; */
+    background-color: #ffedd5;
+
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    color: #1f2937;
+}
+
+.header {
+    background-color: #fdba74;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px 0 20px;
+
+    position: fixed;
+    width: calc(100vw - 40px);
+}
+.header-span-title {
+    font-weight: 500;
+    font-size: 30px;
+}
+.header-nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+}
+.header-nav-a {
+    text-decoration: none;
+}
+.header-nav-a:last-child {
+    background-color: #fb923c;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: #1f2937;
+    box-shadow: rgba(209, 209, 209, 0.3) 0px 1px 2px 0px, rgba(206, 206, 206, 0.15) 0px 2px 6px 2px;
+}
+
+
+.nav-user.open {  
+    transform: translateX(0%);
+    box-shadow: -5px 0px 10px rgb(0 0 0 / 0.2);
+}
+.overlay-nav-user { display: none; }
+.nav-user {
+    background-color: #EFA862;
+    color: #313945;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    z-index: 2;
+
+    padding: 20px;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: 0.4s transform cubic-bezier(.43,.73,0,.98); 
+}
+.overlay-nav-user.open {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1;
+
+    transition: 0.4s;
+}
+.nav-user-profil {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;    
+    gap: 10px;
+}
+.nav-user-profil i { grid-row: span 2; }
+.nav-user-profil-name {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+}
+.nav-user-profil-email {
+    font-size: 15px;
+}
+
+.nav-user-form {
+    display: block;
+
+    background-color: #ffedd5;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav-user-form-selector button { 
+    border-radius: 3px; 
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #313945;
+    padding: 6px;
+    cursor: pointer;
+}
+.nav-user-form-selector button {
+    background-color: #ffedd5;
+    border: none;
+    width: 49%;
+}
+.nav-user-form-selector .form-button-select { background-color: #EFA862; }
+.nav-user-form-form {
+    display: none;
+    padding-top: 20px;
+}
+.nav-user-form-form.form-select { display: block; }
+.nav-user-form-form input {
+    border: none;
+    border-bottom: 2px solid #EFA862;
+    background-color: #ffedd5;
+    margin: 10px;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+.nav-user-form-form input[type="submit"] {
+    border: 2px solid #EFA862;
+    padding: 10px;
+    position: relative;
+    left: 135px;
+    width: auto;
+}
+.nav-user-form-form input[type="submit"]:hover {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 80px;
+
+    width: 100vw;
+}
+.container {
+    max-width: 1300px;
+    width: 95%;
+    text-align: center;
+    background-color: white;
+
+    margin: 20px;
+}
+.container .underTitle {
+    position: relative;
+    bottom: 15px;
+    font-size: 18px;
+}
+
+.container-table {
+    margin: 10px 30px 30px 30px;
+    background-color: rgb(244, 243, 243);
+
+    display: block;
+    border-radius: 5px;
+
+    font-size: 17px;
+}
+.container-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-table-row .cell {
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .container-table {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-table {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container-table {
+        font-size: 13px;
+    }
+}

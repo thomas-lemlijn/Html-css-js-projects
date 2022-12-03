@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Design school</title>
+</head>
+<body>
+    <header class="header">
+        <span class="header-span-title">After school</span>
+        <nav class="header-nav">
+            <a href="#" class="header-nav-a">Vos listes</a>
+            <span href="#" class="header-nav-a" onclick="navUserToggle()"><i class="fa-solid fa-user"></i></span>
+        </nav>
+    </header>
+
+    <nav class="nav-user">
+        <div class="nav-user-profil">
+            <i class="fa-solid fa-address-card fa-4x"></i>
+            <span class="nav-user-profil-name">Pas connecté</span>
+            <span class="nav-user-profil-email"></span>
+        </div>
+
+        <div class="nav-user-form">
+            <div class="nav-user-form-selector">
+                <button class="form-button-1 form-button-select" onclick="formToggle()">Se connecter</button>
+                <button class="form-button-2" onclick="formToggle()">S'inscire</button>
+            </div>
+            <form action="" method="POST" class="nav-user-form-form form-login form-select">
+                <input type="text" placeholder="Votre nom">
+                <input type="mail" placeholder="Votre adresse mail">
+                <input type="password" placeholder="Votre mot de passe">
+                <input type="submit" value="Se connecter">
+            </form>
+            <form action="" method="post" class="nav-user-form-form form-signin">
+                <input type="text" placeholder="Votre nom">
+                <input type="mail" placeholder="Votre adresse mail">
+                <input type="mail" placeholder="Confirmez votre adresse mail">
+                <input type="password" placeholder="Votre mot de passe">
+                <input type="password" placeholder="Confirmez votre mot de passe">
+                <input type="submit" style="left: 175px;" value="S'inscrire">
+            </form>
+
+        </div>
+    </nav>
+
+    <div class="overlay-nav-user" onclick="navUserToggle()"></div>
+
+    <div class="main">
+        <div class="container">
+            <h1>Bienvenue sur After School</h1>
+            <p class="underTitle">Le site qui te permet de réviser après les cours !</p>
+        </div>
+
+        <div class="container">
+            <h2>Verbes irréguliers</h2>
+            <h3>1 à 30</h3>
+            <div class="container-table">
+                <div class="container-table-row">
+                    <div class="cell">To be</div>
+                    <div class="cell">Was / were</div>
+                    <div class="cell">Been</div>
+                    <div class="cell">Etre</div>
+                </div>
+                <div class="container-table-row">
+                    <div class="cell">To dream</div>
+                    <div class="cell">Dreamt</div>
+                    <div class="cell">Dreamt</div>
+                    <div class="cell">Rêver</div>
+                </div>
+                <div class="container-table-row">
+                    <div class="cell">To cut</div>
+                    <div class="cell">Cut</div>
+                    <div class="cell">Cut</div>
+                    <div class="cell">Couper</div>
+                </div>
+                <div class="container-table-row">
+                    <div class="cell">To bend</div>
+                    <div class="cell">Bent</div>
+                    <div class="cell">Bent</div>
+                    <div class="cell">Pencher</div>
+                </div>
+                <form class="container-table-row">
+                    <div class="cell"><input type="text"></div>
+                    <div class="cell"><input type="text"></div>
+                    <div class="cell"><input type="text"></div>
+                    <div class="cell"><input type="text"><input type="submit" value="Ajouter"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Menu profil
+        const userNav = document.querySelector('.nav-user');
+        const userOverlay = document.querySelector('.overlay-nav-user');
+
+        function navUserToggle() {
+            if(userNav.classList.contains("open")) {
+                userNav.classList.remove("open");
+            } else {
+                userNav.classList.add("open");
+            }
+            userOverlay.classList.toggle("open");
+        }
+
+        // Formulaires de connexion / inscription
+        const buttonLogin = document.querySelector('.form-button-1');
+        const buttonSignin = document.querySelector('.form-button-2');
+        const formLogin = document.querySelector('.form-login');
+        const formSignin = document.querySelector('.form-signin');
+        
+        function formToggle() {
+            formLogin.classList.toggle('form-select');
+            buttonLogin.classList.toggle('form-button-select');
+            formSignin.classList.toggle('form-select');
+            buttonSignin.classList.toggle('form-button-select');
+        }
+    </script>  
+    <script src="https://kit.fontawesome.com/46d2380b43.js" crossorigin="anonymous"></script>
+</body>
+</html>
