@@ -1,0 +1,96 @@
+/* Réinitialisation de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #264653;
+    color: #ffffff;
+    min-height: 100vh;
+    
+    /* Centrage complet du container principal dans la page */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Container principal centré */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Titre H1 au-dessus */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Wrapper Flexbox pour la grille de cartes */
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* S'adapte aux écrans plus petits */
+    justify-content: center;
+}
+
+/* Div Flexbox individuelle (Carte) */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 250px; /* S'étire et se réduit avec une base de 250px */
+    text-align: left;
+    
+    /* Flexbox interne pour pousser le lien tout en bas */
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Pousse le contenu ci-dessous vers le bas */
+}
+
+.card .flex {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+/* Lien blanc aligné en bas à droite */
+.white-link {
+    color: #264653;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-end; /* Aligne le lien tout à droite */
+    transition: opacity 0.2s ease;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.white-link:hover {
+    opacity: 0.8;
+}

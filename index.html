@@ -2,147 +2,102 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Liste de projects divers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <span class="header-title">Mes projets HTML</span>
-    </header>
 
-    <container class="container">
-        <!-- Vrai projects -->
+    <main class="container">
 
-        <section class="section">
-            <span class="section-title">Counter</span>
-            <p class="section-desc">Un simple conteur qui n'utilise que du javascript comme language</p>
-            <span class="section-a-project"><a href="Counter/index.html">index.html</a></span>
-        </section>
+        <h1>Liste des projects</h1>
 
-        <section class="section">
-            <span class="section-title">Galerie d'Art</span>
-            <p class="section-desc">Une grille de 4 par 4 avec un titre</p>
-            <span class="section-a-project"><a href="Galerie d'Art/index.html">index.html</a></span>
-        </section>
+        <div class="cards-wrapper">
 
-        <section class="section">
-            <span class="section-title">Switch dark mode</span>
-            <p class="section-desc">Une simple page html qui contient un bouton pour passer du mode claire au mode sombre et inversément</p>
-            <span class="section-a-project"><a href="JavaScript/Switch-Dark-mode/index.html">index.html</a></span>
-        </section>
+            <article class="card">
+                <h3>Dashboard n°01</h3>
+                <p>Essai de recréation d'un tableau de bord exemple.</p>
+                <div class="flex">
+                    <a href="dashboard-01/mytry/index.html" class="white-link" target="_blank">Essai</a>
+                    <a href="dashboard-01/exemple/index.html" class="white-link" target="_blank">Exemple</a>
+                </div>
+            </article>
 
-        <section class="section">
-            <span class="section-title">InnerHTML (Non fonctionnel)</span>
-            <p class="section-desc">Un switch entre 4 container div</p>
-            <span class="section-a-project"><a href="JavaScript/InnerHTML/index.html">index.html</a></span>
-        </section>
+        </div>
 
-        <!-- Futurs projects -->
 
-        <section class="section">
-            <span class="section-title">Futurs projects</span>
-            <p class="section-desc">Coming soon</p>
-            <span class="section-a-project"><a href="#"></a></span>
-        </section>
+        <h2>Html CSS</h2>
 
-        <section class="section">
-            <span class="section-title">Futurs projects</span>
-            <p class="section-desc">Coming soon</p>
-            <span class="section-a-project"><a href="#"></a></span>
-        </section>
+        <div class="cards-wrapper">
+        
+            <article class="card">
+                <h3>Flex Gallery</h3>
+                <p>4x4 grid</p>
+                <a href="html-css-01-flex-gallery/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
 
-        <section class="section">
-            <span class="section-title">Futurs projects</span>
-            <p class="section-desc">Coming soon</p>
-            <span class="section-a-project"><a href="#"></a></span>
-        </section>
-    </container>
+            <article class="card">
+                <h3>After School</h3>
+                <p>Cool design page</p>
+                <a href="html-css-03-after-school/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+
+            <article class="card">
+                <h3>Page FontAwesome</h3>
+                <p>Essai de recréation d'une page du site FontAwesome.</p>
+                <div class="flex">
+                    <a href="html-css-02-page-font-awesome/index.html" class="white-link" target="_blank">Essai</a>
+                    <a href="html-css-02-page-font-awesome/WebSite.png" class="white-link" target="_blank">Exemple</a>
+                </div>
+            </article>
+            
+        </div>
+        
+
+        <h2>Javascript</h2>
+
+        <div class="cards-wrapper">
+        
+            <article class="card">
+                <h3>Tabs switch</h3>
+                <p></p>
+                <a href="js-01-tabs-switch/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+
+            <article class="card">
+                <h3>Counter</h3>
+                <p>+ / Nombre / -</p>
+                <a href="js-02-counter/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+
+            <article class="card">
+                <h3>Switch Dark Mode</h3>
+                <p>Need explaination?</p>
+                <a href="js-03-switch-dark-mode/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+            
+            <article class="card">
+                <h3>Slides</h3>
+                <p></p>
+                <a href="js-04-slides/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+            
+        </div>
+
+
+        <h2>Layout</h2>
+
+        <div class="cards-wrapper">
+        
+            <article class="card">
+                <h3>Layout css n°01</h3>
+                <p>Contient <b>deux lignes tranversales</b> penchées et une div centrée.</p>
+                <a href="css-layout-01/index.html" class="white-link" target="_blank">Ouvrir</a>
+            </article>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
-
-<style>
-    body {
-        --color-50: #fff7ed;
-        --color-100: #ffedd5;
-        --color-200: #fed7aa;
-        --color-300: #fdba74;
-        --color-text: #1f2937;
-
-
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 16px;
-
-        margin: 0;
-        margin-bottom: 40px;
-        padding: 0;
-
-        color: var(--color-text);
-        background-color: var(--color-100);
-    }
-
-    .header {
-        height: 60px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        z-index: 2;
-
-        background-color: var(--color-200);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .header-title {
-        font-size: 20px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-
-        margin-top: 100px;
-    }    
-
-    .section {
-        background-color: var(--color-50);
-
-        width: 550px;
-
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-    .section-title {
-        font-size: 20px;
-    }
-    .section-title:after {
-        content: "";
-        display: block;
-
-        background-color: var(--color-text);
-
-        height: 1px;
-        width: 100%;
-
-        z-index: 1;
-
-        position: relative;
-        top: 5px;
-    }
-    .section-desc {
-        font-size: 15px;
-    }
-    .section-a-project {
-        margin-top: 10px;
-        display: block;
-        text-align: right;
-    }
-    
-</style>

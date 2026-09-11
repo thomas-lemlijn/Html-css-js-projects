@@ -12,7 +12,7 @@ function refresh() {
 function previous() {
     
 }
-function next(
-
-)
+function next() {
+    
+}
 

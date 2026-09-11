@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <header class="header">
+        <span class="header-title">Mes projets HTML</span>
+    </header>
+
+    <container class="container">
+        <!-- Vrai projects -->
+
+        <section class="section">
+            <span class="section-title">Counter</span>
+            <p class="section-desc">Un simple conteur qui n'utilise que du javascript comme language</p>
+            <span class="section-a-project"><a href="Counter/index.html">index.html</a></span>
+        </section>
+
+        <section class="section">
+            <span class="section-title">Galerie d'Art</span>
+            <p class="section-desc">Une grille de 4 par 4 avec un titre</p>
+            <span class="section-a-project"><a href="Galerie d'Art/index.html">index.html</a></span>
+        </section>
+
+        <section class="section">
+            <span class="section-title">Switch dark mode</span>
+            <p class="section-desc">Une simple page html qui contient un bouton pour passer du mode claire au mode sombre et inversément</p>
+            <span class="section-a-project"><a href="JavaScript/Switch-Dark-mode/index.html">index.html</a></span>
+        </section>
+
+        <section class="section">
+            <span class="section-title">InnerHTML (Non fonctionnel)</span>
+            <p class="section-desc">Un switch entre 4 container div</p>
+            <span class="section-a-project"><a href="JavaScript/InnerHTML/index.html">index.html</a></span>
+        </section>
+
+        <!-- Futurs projects -->
+
+        <section class="section">
+            <span class="section-title">Futurs projects</span>
+            <p class="section-desc">Coming soon</p>
+            <span class="section-a-project"><a href="#"></a></span>
+        </section>
+
+        <section class="section">
+            <span class="section-title">Futurs projects</span>
+            <p class="section-desc">Coming soon</p>
+            <span class="section-a-project"><a href="#"></a></span>
+        </section>
+
+        <section class="section">
+            <span class="section-title">Futurs projects</span>
+            <p class="section-desc">Coming soon</p>
+            <span class="section-a-project"><a href="#"></a></span>
+        </section>
+    </container>
+</body>
+</html>
+
+<style>
+    body {
+        --color-50: #fff7ed;
+        --color-100: #ffedd5;
+        --color-200: #fed7aa;
+        --color-300: #fdba74;
+        --color-text: #1f2937;
+
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+
+        color: var(--color-text);
+        background-color: var(--color-100);
+    }
+
+    .header {
+        height: 60px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 2;
+
+        background-color: var(--color-200);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .header-title {
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        margin-top: 100px;
+    }    
+
+    .section {
+        background-color: var(--color-50);
+
+        width: 550px;
+
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .section-title:after {
+        content: "";
+        display: block;
+
+        background-color: var(--color-text);
+
+        height: 1px;
+        width: 100%;
+
+        z-index: 1;
+
+        position: relative;
+        top: 5px;
+    }
+    .section-desc {
+        font-size: 15px;
+    }
+    .section-a-project {
+        margin-top: 10px;
+        display: block;
+        text-align: right;
+    }
+    
+</style>
